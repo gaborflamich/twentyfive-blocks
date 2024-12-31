@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/sample",
+	"version": "1.0",
+	"title": "Sample Block",
+	"category": "text",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "sample",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"isTargetBlank": {
+			"type": "boolean",
+			"default": false
+		},
+		"buttonText": {
+			"type": "string",
+			"source": "html",
+			"selector": "a",
+			"default": "Click me"
+		},
+		"buttonLink": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href",
+			"default": "#"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#000000"
+		}
+	}
+}

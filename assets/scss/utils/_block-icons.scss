@@ -1,0 +1,28 @@
+.editor-block-list-item-create-block-hero,
+.editor-block-list-item-create-block-subpage-cover,
+.editor-block-list-item-create-block-our-work,
+.editor-block-list-item-create-block-readmore,
+.editor-block-list-item-create-block-section-circle,
+.editor-block-list-item-create-block-section-circle-2,
+.editor-block-list-item-create-block-cover-img-left,
+.editor-block-list-item-create-block-cover-img-right,
+.editor-block-list-item-create-block-card-blue,
+.editor-block-list-item-create-block-card-white,
+.editor-block-list-item-create-block-card-simple
+{
+	.block-editor-block-types-list__item-icon{
+		background: url('../../assets/images/block-icon.svg') no-repeat;
+		height: 24px;
+		width: 24px;
+		display: block;
+		margin: auto;
+		padding: 0;
+		.block-editor-block-icon.has-colors{
+			.dashicon.dashicons.dashicons-smiley{
+				&::before{
+					content: '';
+				}
+			}
+		}
+	}
+}

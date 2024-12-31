@@ -1,0 +1,18 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.components-color-palette__custom-color-button {
+	display: none;
+}
+.image-upload-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.components-flex.components-color-palette__custom-color-text-wrapper {
+	display: none;
+}

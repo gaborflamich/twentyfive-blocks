@@ -1,0 +1,17 @@
+.bubble {
+	display: block;
+	position: relative;
+	&:before {
+		content: "";
+		background: url("../../assets/images/bubble.svg") no-repeat;
+		background-size: contain;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: -10px;
+		right: 0;
+		top: -3px;
+		margin: auto;
+		display: block;
+	}
+}
