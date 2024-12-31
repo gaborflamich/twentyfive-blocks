@@ -183,16 +183,13 @@ __webpack_require__.r(__webpack_exports__);
 // colors.js
 const backgroundColors = [{
   name: "primary",
-  color: "#1F1F72"
+  color: "#064e3b"
 }, {
   name: "secondary",
-  color: "#EC805F"
+  color: "#facc15"
 }, {
-  name: "melange",
-  color: "#DFB085"
-}, {
-  name: "beige",
-  color: "#EBCCAC"
+  name: "contrast",
+  color: "#111111"
 }, {
   name: "black",
   color: "#000000"
@@ -201,15 +198,6 @@ const backgroundColors = [{
   color: "#ffffff"
 }];
 const textColors = [{
-  name: "primary",
-  color: "#1f1f72"
-}, {
-  name: "secondary",
-  color: "#ec805f"
-}, {
-  name: "blue",
-  color: "#1F1F72"
-}, {
   name: "white",
   color: "#ffffff"
 }, {

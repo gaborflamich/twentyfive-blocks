@@ -2,17 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/readmore/edit.js":
-/*!******************************!*\
-  !*** ./src/readmore/edit.js ***!
-  \******************************/
+/***/ "./src/button/edit.js":
+/*!****************************!*\
+  !*** ./src/button/edit.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Edit)
 /* harmony export */ });
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor.scss */ "./src/readmore/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor.scss */ "./src/button/editor.scss");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
@@ -100,19 +100,19 @@ function Edit({
 
 /***/ }),
 
-/***/ "./src/readmore/index.js":
-/*!*******************************!*\
-  !*** ./src/readmore/index.js ***!
-  \*******************************/
+/***/ "./src/button/index.js":
+/*!*****************************!*\
+  !*** ./src/button/index.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/readmore/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/readmore/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/readmore/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/readmore/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/button/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/button/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/button/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/button/block.json");
 
 
 
@@ -125,10 +125,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/readmore/save.js":
-/*!******************************!*\
-  !*** ./src/readmore/save.js ***!
-  \******************************/
+/***/ "./src/button/save.js":
+/*!****************************!*\
+  !*** ./src/button/save.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -183,16 +183,13 @@ __webpack_require__.r(__webpack_exports__);
 // colors.js
 const backgroundColors = [{
   name: "primary",
-  color: "#1F1F72"
+  color: "#064e3b"
 }, {
   name: "secondary",
-  color: "#EC805F"
+  color: "#facc15"
 }, {
-  name: "melange",
-  color: "#DFB085"
-}, {
-  name: "beige",
-  color: "#EBCCAC"
+  name: "contrast",
+  color: "#111111"
 }, {
   name: "black",
   color: "#000000"
@@ -201,15 +198,6 @@ const backgroundColors = [{
   color: "#ffffff"
 }];
 const textColors = [{
-  name: "primary",
-  color: "#1f1f72"
-}, {
-  name: "secondary",
-  color: "#ec805f"
-}, {
-  name: "blue",
-  color: "#1F1F72"
-}, {
   name: "white",
   color: "#ffffff"
 }, {
@@ -219,10 +207,10 @@ const textColors = [{
 
 /***/ }),
 
-/***/ "./src/readmore/editor.scss":
-/*!**********************************!*\
-  !*** ./src/readmore/editor.scss ***!
-  \**********************************/
+/***/ "./src/button/editor.scss":
+/*!********************************!*\
+  !*** ./src/button/editor.scss ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -231,10 +219,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/readmore/style.scss":
-/*!*********************************!*\
-  !*** ./src/readmore/style.scss ***!
-  \*********************************/
+/***/ "./src/button/style.scss":
+/*!*******************************!*\
+  !*** ./src/button/style.scss ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -293,13 +281,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/readmore/block.json":
-/*!*********************************!*\
-  !*** ./src/readmore/block.json ***!
-  \*********************************/
+/***/ "./src/button/block.json":
+/*!*******************************!*\
+  !*** ./src/button/block.json ***!
+  \*******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/readmore","version":"1.0","title":"Validity Readmore Link","category":"text","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"readmore","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"isTargetBlank":{"type":"boolean","default":false},"buttonText":{"type":"string","source":"html","selector":"a","default":"Click me"},"buttonLink":{"type":"string","source":"attribute","selector":"a","attribute":"href","default":"#"},"textColor":{"type":"string","default":"#000000"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/button","version":"1.0","title":"Button","category":"text","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"button","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"isTargetBlank":{"type":"boolean","default":false},"buttonText":{"type":"string","source":"html","selector":"a","default":"Click me"},"buttonLink":{"type":"string","source":"attribute","selector":"a","attribute":"href","default":"#"},"textColor":{"type":"string","default":"#000000"}}}');
 
 /***/ })
 
@@ -413,8 +401,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"readmore/index": 0,
-/******/ 			"readmore/style-index": 0
+/******/ 			"button/index": 0,
+/******/ 			"button/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -464,7 +452,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["readmore/style-index"], () => (__webpack_require__("./src/readmore/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["button/style-index"], () => (__webpack_require__("./src/button/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
