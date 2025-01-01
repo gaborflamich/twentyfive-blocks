@@ -6,3 +6,10 @@
   display: inline-block;
   font-weight: bold;
 }
+
+.readmore-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}

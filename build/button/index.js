@@ -35,6 +35,7 @@ function Edit({
   const {
     buttonText,
     buttonLink,
+    backgroundColor,
     textColor,
     isTargetBlank
   } = attributes;
@@ -58,22 +59,31 @@ function Edit({
     ...blockProps,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Settings", "validity-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Settings", "twentyfive-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Text", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Text", "twentyfive-blocks"),
           value: buttonText,
           onChange: onChangeButtonText
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Link", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Link", "twentyfive-blocks"),
           value: buttonLink,
           onChange: onChangeButtonLink
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Open link in new tab", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Open link in new tab", "twentyfive-blocks"),
           checked: isTargetBlank,
           onChange: onChangeIsTargetBlank
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "validity-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "twentyfive-blocks"),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.ColorPalette, {
+          colors: _utils_colors__WEBPACK_IMPORTED_MODULE_4__.backgroundColors,
+          value: backgroundColor,
+          onChange: color => setAttributes({
+            backgroundColor: color
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "twentyfive-blocks"),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.ColorPalette, {
           colors: _utils_colors__WEBPACK_IMPORTED_MODULE_4__.textColors,
           value: textColor,
@@ -87,10 +97,11 @@ function Edit({
       href: buttonLink,
       value: buttonText,
       style: {
-        color: textColor
+        color: textColor,
+        backgroundColor
       },
       onChange: onChangeButtonText,
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add button text...", "validity-blocks"),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add button text...", "twentyfive-blocks"),
       className: "readmore-button",
       target: isTargetBlank ? "_blank" : undefined,
       rel: isTargetBlank ? "noopener noreferrer" : undefined
@@ -148,6 +159,7 @@ function save({
     buttonText,
     buttonLink,
     textColor,
+    backgroundColor,
     isTargetBlank
   } = attributes;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save();
@@ -158,9 +170,10 @@ function save({
       href: buttonLink,
       value: buttonText,
       style: {
-        color: textColor
+        color: textColor,
+        backgroundColor: backgroundColor
       },
-      className: "readmore-button",
+      className: `${blockProps.className} readmore-button`,
       target: isTargetBlank ? "_blank" : undefined,
       rel: isTargetBlank ? "noopener noreferrer" : undefined
     })
@@ -287,7 +300,7 @@ module.exports = window["wp"]["i18n"];
   \*******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/button","version":"1.0","title":"Button","category":"text","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"button","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"isTargetBlank":{"type":"boolean","default":false},"buttonText":{"type":"string","source":"html","selector":"a","default":"Click me"},"buttonLink":{"type":"string","source":"attribute","selector":"a","attribute":"href","default":"#"},"textColor":{"type":"string","default":"#000000"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/button","version":"1.0","title":"Button","category":"text","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"button","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"isTargetBlank":{"type":"boolean","default":false,"show_in_rest":true},"buttonText":{"type":"string","source":"html","selector":"a","default":"Click me","show_in_rest":true},"buttonLink":{"type":"string","source":"attribute","selector":"a","attribute":"href","default":"#","show_in_rest":true},"backgroundColor":{"type":"string","default":"#facc15","show_in_rest":true},"textColor":{"type":"string","default":"#000000","show_in_rest":true}}}');
 
 /***/ })
 

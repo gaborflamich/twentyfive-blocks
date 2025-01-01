@@ -6,6 +6,7 @@
 function twentyfive_blocks_init() {
 	register_block_type( __DIR__ . '/build/sample' );
 	register_block_type( __DIR__ . '/build/button' );
+	register_block_type( __DIR__ . '/blocks/ctaButton' );
 }
 add_action( 'init', 'twentyfive_blocks_init' );
 

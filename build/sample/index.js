@@ -58,22 +58,22 @@ function Edit({
     ...blockProps,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Settings", "validity-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Settings", "twentyfive-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Text", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Text", "twentyfive-blocks"),
           value: buttonText,
           onChange: onChangeButtonText
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Link", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Button Link", "twentyfive-blocks"),
           value: buttonLink,
           onChange: onChangeButtonLink
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Open link in new tab", "validity-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Open link in new tab", "twentyfive-blocks"),
           checked: isTargetBlank,
           onChange: onChangeIsTargetBlank
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "validity-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "twentyfive-blocks"),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.ColorPalette, {
           colors: _utils_colors__WEBPACK_IMPORTED_MODULE_4__.textColors,
           value: textColor,
@@ -90,7 +90,7 @@ function Edit({
         color: textColor
       },
       onChange: onChangeButtonText,
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add button text...", "validity-blocks"),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add button text...", "twentyfive-blocks"),
       className: "readmore-button",
       target: isTargetBlank ? "_blank" : undefined,
       rel: isTargetBlank ? "noopener noreferrer" : undefined

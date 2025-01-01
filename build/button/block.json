@@ -19,24 +19,33 @@
   "attributes": {
     "isTargetBlank": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "show_in_rest": true
     },
     "buttonText": {
       "type": "string",
       "source": "html",
       "selector": "a",
-      "default": "Click me"
+      "default": "Click me",
+      "show_in_rest": true
     },
     "buttonLink": {
       "type": "string",
       "source": "attribute",
       "selector": "a",
       "attribute": "href",
-      "default": "#"
+      "default": "#",
+      "show_in_rest": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#facc15",
+      "show_in_rest": true
     },
     "textColor": {
       "type": "string",
-      "default": "#000000"
+      "default": "#000000",
+      "show_in_rest": true
     }
   }
 }

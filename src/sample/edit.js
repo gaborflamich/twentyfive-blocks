@@ -29,24 +29,24 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<div {...blockProps}>
 			<InspectorControls>
-				<PanelBody title={__("Button Settings", "validity-blocks")}>
+				<PanelBody title={__("Button Settings", "twentyfive-blocks")}>
 					<TextControl
-						label={__("Button Text", "validity-blocks")}
+						label={__("Button Text", "twentyfive-blocks")}
 						value={buttonText}
 						onChange={onChangeButtonText}
 					/>
 					<TextControl
-						label={__("Button Link", "validity-blocks")}
+						label={__("Button Link", "twentyfive-blocks")}
 						value={buttonLink}
 						onChange={onChangeButtonLink}
 					/>
 					<CheckboxControl
-						label={__("Open link in new tab", "validity-blocks")}
+						label={__("Open link in new tab", "twentyfive-blocks")}
 						checked={isTargetBlank}
 						onChange={onChangeIsTargetBlank}
 					/>
 				</PanelBody>
-				<PanelBody title={__("Text Color", "validity-blocks")}>
+				<PanelBody title={__("Text Color", "twentyfive-blocks")}>
 					<ColorPalette
 						colors={textColors}
 						value={textColor}
@@ -61,7 +61,7 @@ export default function Edit({ attributes, setAttributes }) {
 				value={buttonText}
 				style={{ color: textColor }}
 				onChange={onChangeButtonText}
-				placeholder={__("Add button text...", "validity-blocks")}
+				placeholder={__("Add button text...", "twentyfive-blocks")}
 				className="readmore-button"
 				target={isTargetBlank ? "_blank" : undefined}
 				rel={isTargetBlank ? "noopener noreferrer" : undefined}
