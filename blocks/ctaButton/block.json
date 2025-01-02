@@ -2,7 +2,7 @@
 	"name": "wpf/ctabutton",
 	"title": "CTA Button",
 	"description": "A call to action button",
-	"category": "design",
+	"category": "wpflames",
 	"keywords": ["btn", "button", "cta"],
 	"icon": "button",
 	"apiVersion": 2,

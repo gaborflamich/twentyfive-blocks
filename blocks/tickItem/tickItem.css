@@ -1,0 +1,10 @@
+.tickitem-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.tickitem-wrapper > div:first-child {
+	margin-right: 20px;
+	color: var(--wp--preset--color--primary);
+	font-size: 30px;
+}
