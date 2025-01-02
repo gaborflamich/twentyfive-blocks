@@ -9,6 +9,7 @@ function twentyfive_blocks_init() {
 	register_block_type( __DIR__ . '/blocks/ctaButton' );
 	register_block_type( __DIR__ . '/blocks/tickItem' );
 	register_block_type( __DIR__ . '/blocks/carPrice' );
+	register_block_type( __DIR__ . '/blocks/carSearch' );
 }
 add_action( 'init', 'twentyfive_blocks_init' );
 

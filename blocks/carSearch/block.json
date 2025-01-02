@@ -1,0 +1,17 @@
+{
+	"name": "wpf/carsearch",
+	"title": "Car Search",
+	"description": "A widget for search for cars",
+	"category": "wpflames",
+	"keywords": ["search", "car", "find"],
+	"icon": "search",
+	"apiVersion": 2,
+	"acf": {
+		"renderTemplate": "./carSearch.php",
+		"mode": "preview"
+	},
+	"supports": {
+		"mode": false
+	},
+	"style": "file:./carSearch.css"
+}

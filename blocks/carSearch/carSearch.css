@@ -1,0 +1,11 @@
+.wpf-price {
+	background: black;
+	color: white;
+	font-family: var(--wp--preset--font-family--aboreto);
+	padding: 20px;
+	text-align: center;
+}
+
+.wpf-price-amount {
+	margin-right: 5px;
+}

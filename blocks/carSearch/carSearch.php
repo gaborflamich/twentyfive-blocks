@@ -1,0 +1,1 @@
+<div class="">A widget for search for cars</div>
