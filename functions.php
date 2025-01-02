@@ -8,6 +8,7 @@ function twentyfive_blocks_init() {
 	register_block_type( __DIR__ . '/build/button' );
 	register_block_type( __DIR__ . '/blocks/ctaButton' );
 	register_block_type( __DIR__ . '/blocks/tickItem' );
+	register_block_type( __DIR__ . '/blocks/carPrice' );
 }
 add_action( 'init', 'twentyfive_blocks_init' );
 
@@ -24,6 +25,14 @@ function theme_customizations() {
         );
         return $categories;
     }, 10, 2);
+
+    // Process ACF custom field for graphql
+    add_filter('wp_graphql_blocks_process_attributes', function($attributes, $data, $post_id){
+        if($data['blockName'] == 'wpf/carprice'){
+            $attributes['price'] = get_field('price', $post_id) ?? "";
+        }
+        return $attributes;
+    }, 0, 3);
 }
 add_action('init', 'theme_customizations');
 
